@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "custom-script-editor-client-side-solution",
+    "id": "8c3a710c-1b1a-4f99-a190-28ceff491fe5",
+    "version": "1.0.0.6",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "CustomScriptEditor description"
+      },
+      "longDescription": {
+        "default": "CustomScriptEditor description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "custom-script-editor Feature",
+        "description": "The feature that activates elements of the custom-script-editor solution.",
+        "id": "a810b1f9-3f70-428f-8aea-f71b2ad51389",
+        "version": "1.0.0.6"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/custom-script-editor.sppkg"
+  }
+}

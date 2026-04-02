@@ -1,0 +1,51 @@
+{
+  "extends": "./node_modules/@microsoft/rush-stack-compiler-4.7/includes/tsconfig-web.json",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+
+    //  Keep node10 for SPFx compatibility, silence warning
+    "moduleResolution": "node10",
+    "ignoreDeprecations": "6.0",
+
+    "forceConsistentCasingInFileNames": true,
+
+    //  Fix JSX issues
+    "jsx": "react-jsx",
+
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+
+    "rootDir": "./src",
+    "outDir": "lib",
+    "inlineSources": false,
+
+    // eep strict typing
+    "noImplicitAny": true,
+
+    //  Ensure React types are picked up
+    "types": [
+      "webpack-env",
+      "react",
+      "react-dom"
+    ],
+
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@microsoft"
+    ],
+
+    "lib": [
+      "es5",
+      "dom",
+      "es2015.collection",
+      "es2015.promise"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
+}
